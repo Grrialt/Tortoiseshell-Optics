@@ -63,21 +63,21 @@ html{
   display: none;
 }
 
-/*White Text Box*/
 .container{
+  height: 26.5rem;
   width: 960px;
+  margin: 0 auto;
+  padding-left: 4rem;
   display: flex;
-  align-items: center;
-  height: 100%;
-  justify-content: right;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .phrase{
-  width: 45%;
   font-weight: bold;
   font-size: 2rem;
   line-height: 1.2;
   background-color: white;
   padding: 1.5rem 5rem;
-  margin: 10rem auto;
+  margin-top: 10rem;
 }
