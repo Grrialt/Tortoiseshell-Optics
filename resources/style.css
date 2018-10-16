@@ -17,14 +17,14 @@ html{
   background-position: center;
   background-size: cover;
   height: 30rem;
+  padding-top: 1rem;
 }
 /*Header line*/
 .header{
+  margin: 0rem auto;
   width: 960px;
   background-color: cadetblue;
-  padding: 1rem auto;
   font-size: 1rem;
-  margin: 1rem auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -79,5 +79,5 @@ html{
   line-height: 1.2;
   background-color: white;
   padding: 1.5rem 5rem;
-  margin-top: 10rem;
+  margin-top: 11rem;
 }
