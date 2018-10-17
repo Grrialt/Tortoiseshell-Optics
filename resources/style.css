@@ -90,41 +90,86 @@ html{
 }
 
 .paper, .ruler, .truck{
-  border: thin dotted red;
   margin: 3rem;
   height: 8rem;
-  width: 6rem;
+  width: 5rem;
   display: flex;
   flex-direction: column;
-  align-content: space-between;
+  justify-content: space-between;
 
 }
 
 .paper img{
-  border: thick dotted green;
   display: flex;
   width: 3.5rem;
   align-self: center;
 }
 
 .ruler img, .truck img{
-  border: thick dotted green;
   display: flex;
   align-self: center;
   width: 5rem;
 }
 
 .paper p, .ruler p, .truck p{
-  border: thick dotted yellow;
   display: flex;
   align-self: center;
   text-align: center;
-  color: green;
-}
-/*.ruler{
-  border: thin dotted red;
 }
 
-.truck{
-  border: thin dotted red;
-}*/
+/*2 columns of text*/
+.columns{
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.columns h1{
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: cadetblue;
+  color: white;
+  width: 10rem;
+  padding: 0.5rem 1.25rem;
+}
+
+.philosophy{
+  display: flex;
+  flex-direction: column;
+  padding-right: 2.5%;
+  width: 35%;
+}
+
+.appointments{
+  display: flex;
+  flex-direction: column;
+  padding-left: 2.5%;
+  width: 35%;
+}
+
+.philosophy p{
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+.appointments p{
+  margin-top: 1rem;
+}
+
+/*Footer*/
+footer{
+  background-color: azure;
+  margin: 0px auto;
+  background-position: center;
+  width: 960px;
+  padding: 4rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+footer img{
+  height: 1.5rem;
+  padding-right: 1rem;
+}
