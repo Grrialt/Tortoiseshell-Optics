@@ -81,3 +81,50 @@ html{
   padding: 1.5rem 5rem;
   margin-top: 11rem;
 }
+
+/*Main part*/
+.icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.paper, .ruler, .truck{
+  border: thin dotted red;
+  margin: 3rem;
+  height: 8rem;
+  width: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+
+}
+
+.paper img{
+  border: thick dotted green;
+  display: flex;
+  width: 3.5rem;
+  align-self: center;
+}
+
+.ruler img, .truck img{
+  border: thick dotted green;
+  display: flex;
+  align-self: center;
+  width: 5rem;
+}
+
+.paper p, .ruler p, .truck p{
+  border: thick dotted yellow;
+  display: flex;
+  align-self: center;
+  text-align: center;
+  color: green;
+}
+/*.ruler{
+  border: thin dotted red;
+}
+
+.truck{
+  border: thin dotted red;
+}*/
