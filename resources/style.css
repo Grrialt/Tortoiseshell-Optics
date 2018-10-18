@@ -220,6 +220,10 @@ footer img{
     height: 17rem;
   }
 
+  .first, .header, .container, footer{
+    width: 100%;
+  }
+
   .v1{
     display: none;
   }
