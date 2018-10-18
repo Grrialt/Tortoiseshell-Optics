@@ -14,7 +14,7 @@ html{
 .first{
   background-image: url(./images/glasses-bg.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 70%;
   background-size: cover;
   height: 30rem;
   padding-top: 1rem;
@@ -162,7 +162,6 @@ html{
 footer{
   background-color: azure;
   margin: 0px auto;
-  background-position: center;
   width: 960px;
   padding: 4rem;
   display: flex;
@@ -174,15 +173,17 @@ footer img{
   padding-right: 1rem;
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1536px){
+  body{
+    overflow-x: hidden;
+  }
 
   .first{
     width: 100%;
     padding-top: 0rem;
-    background-color: black;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size:cover;
     height: 22rem;
   }
 
@@ -191,21 +192,90 @@ footer img{
   }
 
   .container{
-    /*margin-top: 5rem;
-    margin-right: 2rem;*/
+    width: 100%;
   }
 
   .phrase{
     font-size: 1.33rem;
+    padding: 1rem 4rem;
     margin-top: 5rem;
-    margin-right: 2rem;
-    /*padding: 0.75rem 4rem;*/
+    margin-right: 6rem;
     display: flex;
     justify-content: center;
     align-items: flex-start;
   }
 
-  .main{
+  .main, .columns, footer{
     width: 100%;
   }
+}
+
+@media only screen and (max-width: 1024px){
+  .first{
+    width: 100%;
+    padding-top: 0rem;
+    background-repeat: no-repeat;
+    background-position: 20%;
+    background-size:cover;
+    height: 17rem;
+  }
+
+  .v1{
+    display: none;
+  }
+
+  .v2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    padding: 1rem 2rem 1rem 0;
+  }
+
+  .container{
+    width: 100%;
+
+  }
+
+  .phrase{
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem 0;
+    margin: 9rem 0;
+    text-align: center;
+  }
+
+  .icons{
+    flex-direction: column;
+    align-items: center;
+    margin: 3.77rem 0;
+    font-size: 0.77rem;
+  }
+
+  .paper, .ruler{
+    margin-bottom: 1.54rem;
+  }
+
+  .ruler, .truck{
+    height: 6rem;
+  }
+
+  .columns{
+    flex-direction: column;
+  }
+
+  .philosophy, .appointments{
+    width: 100%;
+    font-size: 0.77rem;
+    margin-bottom: 0rem;
+  }
+
+  .philosophy, .appointments{
+    margin-bottom: 4rem;
+  }
+  .columns h1{
+    width: 100%;
+  }
+
 }
